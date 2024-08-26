@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <main
       id="home"
-      className={`flex min-h-dvh w-full flex-col overflow-hidden bg-neutral-900  text-neutral-200   items-center ${roboto.className}`}
+      className={`flex min-h-screen w-full flex-col overflow-hidden bg-neutral-900  text-neutral-200   items-center ${roboto.className}`}
       // style={{
       //   backgroundImage: 'url("/random.image")',
       //   backgroundSize: 'cover',
@@ -82,6 +82,27 @@ export default function Home() {
       /> */}
 
       {/* <ParticleBackground /> */}
+      <Image
+        className="absolute top-14 left-1/2 -translate-x-1/2 w-[80%] opacity-60"
+        src={'/angelzyzz.png'}
+        height={400}
+        width={500}
+        alt="giga"
+      />
+      <Image
+        className="absolute bottom-0 left-0 w-[60%] md:w-[70%] max-w-[700px]"
+        src={'/giga.webp'}
+        height={400}
+        width={500}
+        alt="giga"
+      />
+      <Image
+        className="absolute bottom-0 right-0 w-[60%] md:w-[70%] max-w-[700px]"
+        src={'/homelander.png'}
+        height={400}
+        width={500}
+        alt="giga"
+      />
       <VantaBackground />
       <ul
         style={{
@@ -89,7 +110,7 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className={`gap-4 w-full min-h-dvh top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-40 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
+        className={`gap-4 w-full min-h-screen top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-40 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
       >
         <li
           onClick={() => {
@@ -130,6 +151,7 @@ export default function Home() {
           <div className="text-xl font-semibold">$T</div>
           <ul className="gap-4 hidden md:flex tracking-tight ">
             <li
+              className="hover:text-red-700 transition duration-300 ease-in-out"
               onClick={() => {
                 scrollToElement('home')
               }}
@@ -138,6 +160,7 @@ export default function Home() {
             </li>
 
             <li
+              className="hover:text-red-700 transition duration-300 ease-in-out"
               onClick={() => {
                 scrollToElement('tokenomics')
               }}
@@ -145,6 +168,7 @@ export default function Home() {
               <a href="#">TOKENOMICS</a>
             </li>
             <li
+              className="hover:text-red-700 transition duration-300 ease-in-out"
               onClick={() => {
                 scrollToElement('contact')
               }}
@@ -212,9 +236,8 @@ export default function Home() {
             $T
           </span>
         </h1>
-        <div className="flex flex-col items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
-          <div>image</div>
-          <div className="max-w-[340px] flex flex-col items-start">
+        <div className="flex flex-col mt-40 items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
+          <div className="max-w-[340px] text-white shadow-sm flex flex-col items-start">
             <p className="text-red-700 font-semibold mb-2">
               Raise Your Test Back To Primal Levels
             </p>
