@@ -152,7 +152,7 @@ export default function Home() {
           width={500}
           alt="giga"
         />
-        <nav className="flex w-full pt-4 fade-in-top opacity-0 px-8 max-w-[1200px] justify-between items-center">
+        <nav className="flex w-full relative z-10 pt-4 fade-in-top opacity-0 px-8 max-w-[1200px] justify-between items-center">
           <div className="text-xl font-semibold">$T</div>
           <ul className="gap-4 hidden md:flex tracking-tight ">
             <li
