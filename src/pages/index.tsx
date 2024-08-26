@@ -286,8 +286,8 @@ export default function Home() {
               Together we will raise our T-levels and show the World again what
               true excellence looks like
             </p>
-            <Button className="bg-neutral-200 container-shadow text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
-              Buy $T
+            <Button className="bg-neutral-200 mb-1 container-shadow text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
+              Buy <span className="text-red-700">$T</span>
             </Button>
             <ContractAddress
               className="container-shadow rounded-lg  bg-red-800 hover:bg-white/80 transition duration-300 ease-in-out px-4 py-1 text-black opacity-100"
@@ -357,7 +357,7 @@ export default function Home() {
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="bg-neutral-200/90  backdrop-blur-sm h-[180px] flex items-center flex-col justify-center max-w-[80%] w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center  text-neutral-200">
                 <p className=" w-fit leading-9">4</p>
               </span>
               <p className="font-semibold text-[28px] text-red-800">

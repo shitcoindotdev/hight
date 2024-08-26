@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>$T - HIGH T</title>
-        <link rel="icon" href="/dexs.svg" />
+        <link rel="icon" href="/testmolecule.svg" />
         <script
           src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"
           defer
