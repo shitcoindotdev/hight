@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  -webkit-font-smoothing: antialiased;
+
+  /* For Firefox */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* A more general rule (optional) */
+  font-smoothing: antialiased;
+}
+
+.shining-gradient {
+  background: linear-gradient(
+    135deg,
+    /* Direction: 135deg starts from top left */ #eeeeee,
+    /* Light color (or white) for the shine */ #f0f0f0 5%,
+    /* Slightly darker shade of white */ #cccccc 20%,
+    /* A light gray tone */ #888888 100% /* Darker color to create depth */
+  );
+}
+
+.res-header {
+  font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+}
+
+.res-subheader {
+  font-size: clamp(1.25rem, 2.75vw, 2.25rem);
+}
+
+.text-shadow {
+  text-shadow: 3px 2px 0px #000;
+}
+
+.text-border {
+  -webkit-text-stroke: 1px black;
+}
+
+.container-shadow {
+  box-shadow: 4px 5px 0px #333;
+}
+
+.fadeInFromScreenTop {
+  animation: fadeInFromScreenTop 0.75s forwards;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.5s forwards;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromScreenTop {
+  0% {
+    transform: translateY(-32vh);
+  }
+  50% {
+    transform: translateY(-6px); /* First overshoot */
+  }
+  70% {
+    transform: translateY(4px); /* Bounce back, smaller overshoot */
+  }
+  85% {
+    transform: translateY(-2px); /* Slight upward bounce */
+  }
+  100% {
+    transform: translateY(0); /* Settle into place */
+  }
+}
+
+/* Fade In from Left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+/* Fade In from Right */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+/* Fade In from Top */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-top {
+  animation: fadeInTop 1s ease-in-out forwards;
+}
+
+.fade-in-top-min {
+  animation: fadeInTop 1s ease-in-out forwards;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+}
+
+.triangle .shape-fill {
+  fill: #e5e5e5;
+}
+
+.lines {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lines::before,
+.lines::after {
+  content: '';
+  display: block;
+  width: 128px;
+  height: 2px;
+}
+
+.lines::before {
+  margin-right: 10px; /* Adjust the spacing between the line and the element */
+}
+
+.lines::after {
+  margin-left: 10px; /* Adjust the spacing between the line and the element */
+}
+
+.bottomTriangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.bottomTriangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 83px;
+}
+
+.bottomTriangle .shape-fill {
+  fill: rgb(23, 23, 23);
+}
+
+/* Container for the mobile menu */
+.mobile-menu {
+  opacity: 0;
+  visibility: hidden; /* Hide the element when not open */
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* Class to show the mobile menu */
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible; /* Show the element when open */
+}
+
+/* styles.css */
+@keyframes fadeInVisible {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.animate-on-scroll.visible {
+  animation: fadeInVisible 0.5s ease forwards;
+}
