@@ -127,7 +127,7 @@ export default function Home() {
         </li>
       </ul>
       <section className="flex w-full  relative min-h-screen  z-20 items-center flex-col">
-        <div className="absolute w-full h-full bg-neutral-900/50 z-10"></div>
+        <div className="absolute pointer-events-none w-full h-full bg-neutral-900/50 z-10"></div>
         <Image
           style={{ animationDelay: '500ms' }}
           className="absolute fadeIn top-14  z-0 opacity-0 left-1/2 -translate-x-1/2 w-[80%] max-w-[900px]"
@@ -195,7 +195,7 @@ export default function Home() {
           </div>
         </nav>
         <div
-          className="fixed top-4 fade-in-top right-4 z-50 md:hidden"
+          className="fixed top-4 fade-in-top right-4 z-[9999] md:hidden"
           onClick={toggleMenu}
         >
           {!menuOpen ? (
@@ -246,8 +246,9 @@ export default function Home() {
             style={{ animationDelay: '1500ms' }}
             className="max-w-[340px] relative z-10 text-white opacity-0 shadow-sm flex fadeIn flex-col items-start"
           >
-            <p className="text-red-700 font-semibold mb-2">
-              Raise Your Test Back To Primal Levels
+            <p className="text-neutral-200 md:text-[42px] md:leading-[42px] font-semibold mb-2">
+              Raise Your <span className="text-red-700">Test</span> Back To
+              Primal Levels
             </p>
             <p className="mb-1">
               <span className="text-red-700">$T</span> is a memecoin on Solana
@@ -257,9 +258,11 @@ export default function Home() {
               Together we will raise our T-levels and show the World again what
               true excellence looks like
             </p>
-
+            <Button className="bg-neutral-200 text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
+              Buy $T
+            </Button>
             <ContractAddress
-              className="container-shadow rounded-lg  bg-neutral-200 hover:bg-white/80 transition duration-300 ease-in-out px-4 py-1 text-black opacity-100"
+              className="container-shadow rounded-lg  bg-red-800 hover:bg-white/80 transition duration-300 ease-in-out px-4 py-1 text-black opacity-100"
               contractAddress={shitcoin.ca}
               style={{ animationDelay: '666ms' }}
             />
@@ -283,10 +286,10 @@ export default function Home() {
         <div className="text-neutral-900 px-8 flex md:flex-row flex-col gap-8 justify-center items-center w-full">
           <AnimateOnScroll>
             <div className="bg-neutral-200/90  backdrop-blur-sm h-[180px] flex items-center flex-col justify-center max-w-[80%] w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-neutral-900 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-neutral-200">
                 <p className=" w-fit leading-9">1</p>
               </span>
-              <p className="font-semibold text-[28px]">Get $TRX</p>
+              <p className="font-semibold text-[28px] text-red-800">Get $TRX</p>
               <p>
                 Make sure you have some TRON - $TRX.
                 <br /> You can receive it by buying it on an exchange like
@@ -296,10 +299,12 @@ export default function Home() {
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="bg-neutral-200/90 backdrop-blur-sm h-[180px] flex items-center flex-col justify-center max-w-[80%]  w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center  bg-neutral-900 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center  bg-red-800 text-neutral-200">
                 <p className=" w-fit leading-9">2</p>
               </span>
-              <p className="font-semibold text-[28px]">Go to SunSwap</p>
+              <p className="font-semibold text-[28px] text-red-800">
+                Go to SunSwap
+              </p>
               <p>
                 Go to SunSwap and connect your wallet
                 <br /> (TronLink, MathWallet, etc.)
@@ -310,10 +315,12 @@ export default function Home() {
         <div className="text-neutral-900 px-8 md:flex-row flex-col flex gap-8 justify-center items-center w-full">
           <AnimateOnScroll>
             <div className="bg-neutral-200/90  backdrop-blur-sm  h-[180px] flex items-center flex-col justify-center max-w-[80%] w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-neutral-900 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-neutral-200">
                 <p className=" w-fit leading-9">3</p>
               </span>
-              <p className="font-semibold text-[28px]">SWAP $TRX FOR $T</p>
+              <p className="font-semibold text-[28px] text-red-800">
+                SWAP $TRX FOR $T
+              </p>
               <p>
                 Swap your $TRX for $T
                 <br /> on SunSwap
@@ -322,10 +329,12 @@ export default function Home() {
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="bg-neutral-200/90  backdrop-blur-sm h-[180px] flex items-center flex-col justify-center max-w-[80%] w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-neutral-900 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-red-800 text-neutral-200">
                 <p className=" w-fit leading-9">4</p>
               </span>
-              <p className="font-semibold text-[28px]">INCREASE YOUR T</p>
+              <p className="font-semibold text-[28px] text-red-800">
+                INCREASE YOUR T
+              </p>
               <p>The more $T you own the higher your testosterone goes</p>
             </div>
           </AnimateOnScroll>
