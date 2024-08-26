@@ -9,7 +9,9 @@ const VantaBackground = () => {
     const initVanta = () => {
       if (vantaRef.current) {
         // Ensure Vanta.js is loaded before initializing
+        // @ts-ignore
         if (window.VANTA && window.THREE) {
+          // @ts-ignore
           vantaEffect = window.VANTA.WAVES({
             el: vantaRef.current,
             mouseControls: true,
