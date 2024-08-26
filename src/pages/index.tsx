@@ -176,6 +176,22 @@ export default function Home() {
           alt="giga"
         />
         <Image
+          style={{ animationDelay: '500ms' }}
+          className="absolute bottom-0 z-[8] fadeIn w-[60%] opacity-0 left-1/2 -translate-x-1/2  max-w-[700px]"
+          src={'/don.png'}
+          height={400}
+          width={500}
+          alt="giga"
+        />
+        <Image
+          style={{ animationDelay: '500ms' }}
+          className="absolute bottom-0 z-[0] fadeIn w-[40%] opacity-0 right-0 max-w-[420px]"
+          src={'/rocky.png'}
+          height={400}
+          width={500}
+          alt="giga"
+        />
+        <Image
           className="absolute bottom-0 fade-in-left z-0 opacity-0 left-0 w-[60%] md:w-[70%] max-w-[700px]"
           style={{ animationDelay: '700ms' }}
           src={'/giga.webp'}
@@ -184,7 +200,7 @@ export default function Home() {
           alt="giga"
         />
         <Image
-          className="absolute bottom-0  z-0 fade-in-right opacity-0 right-0 w-[60%] md:w-[70%] max-w-[700px]"
+          className="absolute bottom-0  z-[1] fade-in-right opacity-0 right-0 w-[60%] md:w-[70%] max-w-[700px]"
           style={{ animationDelay: '700ms' }}
           src={'/homelander.png'}
           height={400}
