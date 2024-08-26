@@ -295,11 +295,7 @@ export default function Home() {
                 <p className=" w-fit leading-9">4</p>
               </span>
               <p className="font-semibold text-[28px]">INCREASE YOUR T</p>
-              <p>
-                Make sure you have some TRON - $TRX.
-                <br /> You can receive it by buying it on an exchange like
-                Binance or Coinbase
-              </p>
+              <p>The more $T you own the higher your testosterone goes</p>
             </div>
           </AnimateOnScroll>
         </div>
