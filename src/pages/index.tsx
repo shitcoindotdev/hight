@@ -15,17 +15,17 @@ const roboto = Kanit({
 
 const socialsObjects = {
   twitter: {
-    href: 'https://x.com/' + '',
+    href: 'https://x.com/TronHighT',
     icon: '/x.svg',
   },
   telegram: {
-    href: 'https://t.me/' + '',
+    href: 'https://t.me/TronHighT',
     icon: '/tg.svg',
   },
-  dexScreener: {
-    href: 'https://dexscreener.com/',
-    icon: '/dexs.svg',
-  },
+  // dexScreener: {
+  //   href: 'https://dexscreener.com/',
+  //   icon: '/dexs.svg',
+  // },
   dexTools: {
     href: 'https://www.dextools.io/',
     icon: '/dext.svg',
@@ -40,7 +40,6 @@ const shitcoin = {
   socials: [
     socialsObjects.twitter,
     socialsObjects.telegram,
-    socialsObjects.dexScreener,
     socialsObjects.dexTools,
   ],
 }
@@ -208,7 +207,9 @@ export default function Home() {
           alt="giga"
         />
         <nav className="flex w-full relative z-10 pt-4 fade-in-top opacity-0 px-8 max-w-[1200px] justify-between items-center">
-          <div className="text-xl font-semibold">$T</div>
+          <a href="#" className="text-xl font-semibold">
+            $T
+          </a>
           <ul className="gap-4 hidden md:flex tracking-tight ">
             <li
               className="hover:text-red-700 transition duration-300 ease-in-out"
