@@ -357,7 +357,7 @@ export default function Home() {
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="bg-neutral-200/90  backdrop-blur-sm h-[180px] flex items-center flex-col justify-center max-w-[80%] w-[420px] overflow-hidden relative text-center p-4 rounded-lg">
-              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-red-800 text-neutral-200">
+              <span className="absolute rounded-br-lg top-0 left-0 w-10 h-10 text-center leading-relaxed flex justify-center bg-red-800 text-neutral-200">
                 <p className=" w-fit leading-9">4</p>
               </span>
               <p className="font-semibold text-[28px] text-red-800">
