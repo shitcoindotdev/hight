@@ -126,7 +126,7 @@ export default function Home() {
           </Button>
         </li>
       </ul>
-      <section className="flex w-full  relative min-h-screen  z-20 items-center flex-col">
+      <section className="flex w-full  relative min-h-dvh  z-20 items-center flex-col">
         <div className="absolute pointer-events-none w-full h-full bg-neutral-900/50 z-10"></div>
         <Image
           style={{ animationDelay: '500ms' }}
