@@ -82,27 +82,7 @@ export default function Home() {
       /> */}
 
       {/* <ParticleBackground /> */}
-      <Image
-        className="absolute top-14 left-1/2 -translate-x-1/2 w-[80%] opacity-60"
-        src={'/angelzyzz.png'}
-        height={400}
-        width={500}
-        alt="giga"
-      />
-      <Image
-        className="absolute bottom-0 left-0 w-[60%] md:w-[70%] max-w-[700px]"
-        src={'/giga.webp'}
-        height={400}
-        width={500}
-        alt="giga"
-      />
-      <Image
-        className="absolute bottom-0 right-0 w-[60%] md:w-[70%] max-w-[700px]"
-        src={'/homelander.png'}
-        height={400}
-        width={500}
-        alt="giga"
-      />
+
       <VantaBackground />
       <ul
         style={{
@@ -146,7 +126,32 @@ export default function Home() {
           </Button>
         </li>
       </ul>
-      <section className="flex w-full  relative min-h-screen items-center flex-col">
+      <section className="flex w-full  relative min-h-screen  z-20 items-center flex-col">
+        <div className="absolute w-full h-full bg-neutral-900/50 z-10"></div>
+        <Image
+          style={{ animationDelay: '500ms' }}
+          className="absolute fadeIn top-14  z-0 opacity-0 left-1/2 -translate-x-1/2 w-[80%] max-w-[900px]"
+          src={'/angelzyzz.png'}
+          height={400}
+          width={500}
+          alt="giga"
+        />
+        <Image
+          className="absolute bottom-0 fade-in-left z-0 opacity-0 left-0 w-[60%] md:w-[70%] max-w-[700px]"
+          style={{ animationDelay: '700ms' }}
+          src={'/giga.webp'}
+          height={400}
+          width={500}
+          alt="giga"
+        />
+        <Image
+          className="absolute bottom-0  z-0 fade-in-right opacity-0 right-0 w-[60%] md:w-[70%] max-w-[700px]"
+          style={{ animationDelay: '700ms' }}
+          src={'/homelander.png'}
+          height={400}
+          width={500}
+          alt="giga"
+        />
         <nav className="flex w-full pt-4 fade-in-top opacity-0 px-8 max-w-[1200px] justify-between items-center">
           <div className="text-xl font-semibold">$T</div>
           <ul className="gap-4 hidden md:flex tracking-tight ">
@@ -237,7 +242,10 @@ export default function Home() {
           </span>
         </h1>
         <div className="flex flex-col mt-40 items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
-          <div className="max-w-[340px] text-white shadow-sm flex flex-col items-start">
+          <div
+            style={{ animationDelay: '1500ms' }}
+            className="max-w-[340px] relative z-10 text-white opacity-0 shadow-sm flex fadeIn flex-col items-start"
+          >
             <p className="text-red-700 font-semibold mb-2">
               Raise Your Test Back To Primal Levels
             </p>
