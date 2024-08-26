@@ -176,16 +176,16 @@ export default function Home() {
           alt="giga"
         />
         <Image
-          style={{ animationDelay: '500ms' }}
-          className="absolute bottom-0 z-[8] fadeIn w-[60%] opacity-0 left-1/2 -translate-x-1/2  max-w-[700px]"
+          className="absolute bottom-0 z-[8] fade-in-left w-[60%] opacity-0  max-w-[700px]"
+          style={{ animationDelay: '600ms' }}
           src={'/don.png'}
           height={400}
           width={500}
           alt="giga"
         />
         <Image
-          style={{ animationDelay: '500ms' }}
-          className="absolute bottom-0 z-[0] fadeIn w-[40%] opacity-0 right-0 max-w-[420px]"
+          className="absolute bottom-0 z-[0] fade-in-right w-[40%] opacity-0 right-0 max-w-[420px]"
+          style={{ animationDelay: '650ms' }}
           src={'/rocky.png'}
           height={400}
           width={500}
