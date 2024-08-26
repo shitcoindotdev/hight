@@ -258,7 +258,7 @@ export default function Home() {
               Together we will raise our T-levels and show the World again what
               true excellence looks like
             </p>
-            <Button className="bg-neutral-200 text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
+            <Button className="bg-neutral-200 container-shadow text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
               Buy $T
             </Button>
             <ContractAddress
