@@ -397,7 +397,7 @@ export default function Home() {
                     <path d="M20 6 9 17l-5-5" />
                   </svg>
                 </span>
-                0 TAX
+                0% TAX
               </li>
               <li className="flex gap-2 items-center">
                 <span>
@@ -439,7 +439,7 @@ export default function Home() {
                     <circle cx="6" cy="5" r="3" />
                   </svg>
                 </span>
-                SUPPLY
+                1B SUPPLY
               </li>
             </ul>
           </div>
