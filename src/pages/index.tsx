@@ -233,7 +233,7 @@ export default function Home() {
             </svg>
           )}
         </div>
-        <h1 className="flex items-center gap-2 md:gap-8 justify-center w-full">
+        <h1 className="flex items-center relative z-10 gap-2 md:gap-8 justify-center w-full">
           <span className="text-neutral-200 font-semibold opacity-0 fade-in-left text-[48px] md:text-[128px]">
             HIGH
           </span>
@@ -241,7 +241,16 @@ export default function Home() {
             $T
           </span>
         </h1>
-        <div className="flex flex-col mt-40 items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
+        <div className="flex flex-col md:flex-row-reverse  mt-16 items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
+          <div className="relative flex justify-center w-fit z-10">
+            <Image
+              className="rounded-lg w-[500px] max-w-[80%]"
+              src={'/shelby.gif'}
+              height={400}
+              width={400}
+              alt="shelby"
+            />
+          </div>
           <div
             style={{ animationDelay: '1500ms' }}
             className="max-w-[340px] relative z-10 text-white opacity-0 shadow-sm flex fadeIn flex-col items-start"
