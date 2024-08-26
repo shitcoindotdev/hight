@@ -84,13 +84,52 @@ export default function Home() {
       {/* <ParticleBackground /> */}
 
       <VantaBackground />
+      <div
+        className="fixed top-4 z-50 fade-in-top right-4 md:hidden"
+        onClick={toggleMenu}
+      >
+        {!menuOpen ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        )}
+      </div>
       <ul
         style={{
           backgroundImage: 'url("/zyzz.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className={`gap-4 w-full min-h-dvh top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-20 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
+        className={`gap-4 w-full min-h-dvh top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-40 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
       >
         <li
           onClick={() => {
@@ -194,45 +233,7 @@ export default function Home() {
             />
           </div>
         </nav>
-        <div
-          className="fixed top-4 fade-in-top right-4 z-[9999] md:hidden"
-          onClick={toggleMenu}
-        >
-          {!menuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-menu"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-x"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          )}
-        </div>
+
         <h1 className="flex items-center relative z-10 gap-2 md:gap-8 justify-center w-full">
           <span className="text-neutral-200 font-semibold opacity-0 fade-in-left text-[48px] md:text-[128px]">
             HIGH
