@@ -90,7 +90,7 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className={`gap-4 w-full min-h-screen top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-40 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
+        className={`gap-4 w-full min-h-dvh top-0 left-0 items-center justify-center text-[32px] text-neutral-200 fixed md:hidden flex flex-col bg-neutral-900 transition duration-300 ease-in-out tracking-tight z-20 opacity-0 mobile-menu ${menuOpen ? 'open' : ''}`}
       >
         <li
           onClick={() => {
