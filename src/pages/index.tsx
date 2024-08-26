@@ -421,15 +421,18 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <AnimateOnScroll className="w-full bg-neutral-900">
-        <section className="flex flex-col gap-4 bg-neutral-900 w-full py-4">
+
+      <section className="flex flex-col gap-4 bg-red-800 w-full py-4">
+        <AnimateOnScroll>
           <h1
             id="contact"
             className=" text-[28px] text-center text-nowrap md:text-[68px] text-neutral-200 font-semibold pt-4 "
           >
-            Increase your T
+            Raise Your $T
           </h1>
-          <div className="flex flex-col justify-center items-center gap-4">
+        </AnimateOnScroll>
+        <div className="flex flex-col justify-center items-center gap-4">
+          <AnimateOnScroll>
             <div className="flex gap-4 items-center justify-center">
               <LinkWithIcon
                 href={socialsObjects.telegram.href}
@@ -447,14 +450,14 @@ export default function Home() {
                 icon={socialsObjects.dexTools.icon}
               />
             </div>
-            <span>contact@hightest.com</span>
-            <span className="text-sm md:text-md">
-              &copy; HIGH<span className="text-red-700">T</span> 2024{' '}
-              <span className="px-1">|</span> ALL RIGHTS ARE NOT RESERVED.
-            </span>
-          </div>
-        </section>
-      </AnimateOnScroll>
+          </AnimateOnScroll>
+          <span>contact@hightest.com</span>
+          <span className="text-sm md:text-md">
+            &copy; HIGH<span className="text-red-700">T</span> 2024{' '}
+            <span className="px-1">|</span> ALL RIGHTS ARE NOT RESERVED.
+          </span>
+        </div>
+      </section>
     </main>
   )
 }
