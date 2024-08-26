@@ -244,8 +244,9 @@ export default function Home() {
         <div className="flex flex-col md:flex-row-reverse  mt-16 items-center gap-4 justify-between max-w-[1200px] px-8 w-full">
           <div className="relative flex justify-center w-fit z-10">
             <Image
-              className="rounded-lg w-[500px] max-w-[80%]"
+              className="rounded-lg opacity-0 fadeIn w-[500px] max-w-[80%]"
               src={'/shelby.gif'}
+              style={{ animationDelay: '1500ms' }}
               height={400}
               width={400}
               alt="shelby"
