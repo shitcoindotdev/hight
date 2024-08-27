@@ -279,7 +279,7 @@ export default function Home() {
               Primal Levels
             </p>
             <p className="mb-1">
-              <span className="text-red-700">$T</span> is a memecoin on Solana
+              <span className="text-red-700">$T</span> is a memecoin on Tron
               made by High Testosterone individuals, for High T individuals.
             </p>
             <p>
@@ -481,6 +481,7 @@ export default function Home() {
                 className="h-auto transition-all overflow-hidden duration-150 ease-in-out rounded-md max-w-16"
                 icon={socialsObjects.twitter.icon}
               />
+              s
               <LinkWithIcon
                 href={socialsObjects.dexTools.href}
                 className="h-auto transition-all overflow-hidden duration-150 ease-in-out rounded-md max-w-16"
