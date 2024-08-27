@@ -279,8 +279,9 @@ export default function Home() {
               Primal Levels
             </p>
             <p className="mb-1">
-              <span className="text-red-700">$T</span> is a memecoin on Tron
-              made by High Testosterone individuals, for High T individuals.
+              <span className="text-red-700">$T</span> is a memecoin on{' '}
+              <span className="text-red-700">T</span>ron made by High
+              Testosterone individuals, for High T individuals.
             </p>
             <p>
               Together we will raise our T-levels and show the World again what
