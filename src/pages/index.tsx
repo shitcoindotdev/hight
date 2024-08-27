@@ -280,7 +280,7 @@ export default function Home() {
             </p>
             <p className="mb-1">
               <span className="text-red-700">$T</span> is a memecoin on{' '}
-              <span className="text-red-700">T</span>ron made by High
+              <span className="text-red-700">Tron</span> made by High
               Testosterone individuals, for High T individuals.
             </p>
             <p>
