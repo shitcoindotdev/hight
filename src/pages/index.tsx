@@ -488,7 +488,7 @@ export default function Home() {
               />
             </div>
           </AnimateOnScroll>
-          <span>contact@hightest.com</span>
+          <span>contact@highT.xyz</span>
           <span className="text-sm md:text-md">
             &copy; HIGH<span className="text-red-700">T</span> 2024{' '}
             <span className="px-1">|</span> ALL RIGHTS ARE NOT RESERVED.

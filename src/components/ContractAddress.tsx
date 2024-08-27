@@ -56,9 +56,9 @@ function ContractAddress({
   const truncatedAddress = truncateMiddle(contractAddress, 6, 4)
 
   return (
-    <div className="flex flex-col -mt-1.5 items-center justify-center">
+    <div className="flex flex-col -mt-1.5 items-start justify-center">
       <div
-        className={`flex items-center bg-neutral-200 backdrop-blur-md justify-center rounded-md  px-2 py-1 text-xs md:text-sm text-black transition-all duration-[168ms] ease-in-out ${showToast ? '-translate-y-0.5 opacity-100' : 'translate-y-2 opacity-0'}`}
+        className={`flex items-center  justify-center rounded-md  px-2 pt-1 text-xs md:text-sm  transition-all duration-[168ms] ease-in-out ${showToast ? '-translate-y-0 opacity-100' : 'translate-y-2 opacity-0'}`}
       >
         Address copied{' '}
         <Image
