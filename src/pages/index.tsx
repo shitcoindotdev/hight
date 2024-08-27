@@ -281,7 +281,8 @@ export default function Home() {
             <p className="mb-1">
               <span className="text-red-700">$T</span> is a memecoin on{' '}
               <span className="text-red-700">Tron</span> made by High
-              Testosterone individuals, for High T individuals.
+              Testosterone individuals, for High{' '}
+              <span className="text-red-700">T</span> individuals.
             </p>
             <p>
               Together we will raise our T-levels and show the World again what
