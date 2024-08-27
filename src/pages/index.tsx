@@ -483,7 +483,7 @@ export default function Home() {
                 className="h-auto transition-all overflow-hidden duration-150 ease-in-out rounded-md max-w-16"
                 icon={socialsObjects.twitter.icon}
               />
-              s
+
               <LinkWithIcon
                 href={socialsObjects.dexTools.href}
                 className="h-auto transition-all overflow-hidden duration-150 ease-in-out rounded-md max-w-16"
