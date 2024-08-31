@@ -27,15 +27,14 @@ const socialsObjects = {
   //   icon: '/dexs.svg',
   // },
   dexTools: {
-    href: 'https://www.dextools.io/',
+    href: 'https://www.dextools.io/app/en/tron/pair-explorer/TRRQkK2Q2ZeUn4fovjDHR95h9S1H9HgySA?t=1725141524696',
     icon: '/dext.svg',
   },
 }
 
 const shitcoin = {
   ticker: '$T',
-  ca: '0x000000000000000000000000000000000000dEaD',
-  scan: 'https://etherscan.io/address/0x000000000000000000000000000000000000dEaD',
+  ca: 'TRRQkK2Q2ZeUn4fovjDHR95h9S1H9HgySA',
   mainImg: '/',
   socials: [
     socialsObjects.twitter,
@@ -158,6 +157,7 @@ export default function Home() {
         <li>
           <Button
             style={{ animationDelay: '666ms' }}
+            href="https://sunpump.meme/token/TRRQkK2Q2ZeUn4fovjDHR95h9S1H9HgySA"
             className="rounded-md  bg-red-700 hover:bg-red-600  transition duration-300 ease-in-out px-4 py-1 text-neutral-200 "
           >
             Buy {shitcoin.ticker}{' '}
@@ -288,7 +288,10 @@ export default function Home() {
               Together we will raise our T-levels and show the World again what
               true excellence looks like
             </p>
-            <Button className="bg-neutral-200 mb-1 container-shadow text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4">
+            <Button
+              href="https://sunpump.meme/token/TRRQkK2Q2ZeUn4fovjDHR95h9S1H9HgySA"
+              className="bg-neutral-200 mb-1 container-shadow text-[16px] md:text-[18px] px-4 md:py-1 rounded-lg text-neutral-900 mt-4"
+            >
               Buy <span className="text-red-700">$T</span>
             </Button>
             <ContractAddress
